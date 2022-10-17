@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+
+.conTarjeta{
+    min-height: 100vh;
+    background: #white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+
+.conTarjeta form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 160px;
+}
+
+.conTarjeta form .inputBox{
+    margin-top: 20px;
+}
+
+.conTarjeta form .inputBox span{
+    display: block;
+    color:#999;
+    padding-bottom: 5px;
+}
+
+.conTarjeta form .inputBox input,
+.conTarjeta form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+
+.conTarjeta form .Tarjetaflexbox{
+    display: flex;
+    gap:15px;
+}
+
+.conTarjeta form .Tarjetaflexbox .inputBox{
+    flex:1 1 150px;
+}
+
+.conTarjeta form .Tarjetasubmit-btn{
+    width: 100%;
+    background: black;
+
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.conTarjeta form .Tarjetasubmit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.conTarjeta .tarjeta-con{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.conTarjeta .tarjeta-con .frontTarjeta{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding:20px;
+    transform:perspective(1000px) rotateY(0deg);
+    transition:transform .4s ease-out;
+}
+
+.conTarjeta .tarjeta-con .frontTarjeta .imageTarjeta{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.conTarjeta .tarjeta-con .frontTarjeta .imageTarjeta img{
+    height: 50px;
+}
+
+.conTarjeta .tarjeta-con .frontTarjeta .tarjeta-numero-box{
+    padding:30px 0;
+    font-size: 22px;
+    color:#fff;
+}
+
+.conTarjeta .tarjeta-con .frontTarjeta .Tarjetaflexbox{
+    display: flex;
+}
+
+.conTarjeta .tarjeta-con .frontTarjeta .Tarjetaflexbox .Tarjetabox:nth-child(1){
+    margin-right: auto;
+}
+
+.conTarjeta .tarjeta-con .frontTarjeta .Tarjetaflexbox .Tarjetabox{
+    font-size: 15px;
+    color:#fff;
+}
+
+.conTarjeta .tarjeta-con .Tarjetaback{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform:perspective(1000px) rotateY(180deg);
+    transition:transform .4s ease-out;
+}
+
+.conTarjeta .tarjeta-con .Tarjetaback .Tarjetastripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.conTarjeta .tarjeta-con .Tarjetaback .Tarjetabox{
+    padding: 0 20px;
+}
+
+.conTarjeta .tarjeta-con .Tarjetaback .Tarjetabox span{
+    color:#fff;
+    font-size: 15px;
+}
+
+.conTarjeta .tarjeta-con .Tarjetaback .Tarjetabox .Tarjetacvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color:#333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.conTarjeta .tarjeta-con .Tarjetaback .Tarjetabox img{
+    margin-top: 30px;
+    height: 30px;
+}
